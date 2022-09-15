@@ -101,7 +101,9 @@ if __name__ == '__main__':
     else:
         event = 'completed'
         payload = scan()
-
+        print('result start')
+        print(RESULT)
+        print('result end')
         VULNS = ( len(RESULT['version']['vulnerabilities']) +
                 len(RESULT['main_theme']['vulnerabilities']) + 
                 sum([len(RESULT['plugins'][p]['vulnerabilities']) for p in RESULT['plugins']]) )
