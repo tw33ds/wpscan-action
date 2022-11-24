@@ -33,4 +33,5 @@ runs:
     SLACK_WEBHOOK_URL: ${{ inputs.webhook }}
     WP_SCAN_API_TOKEN: ${{ inputs.token }}
   args:
+    - entrypoint.sh
     - ${{ inputs.url }}
